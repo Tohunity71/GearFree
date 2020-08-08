@@ -32,8 +32,6 @@ public class IndividualGears : MonoBehaviour
                 selected = true; 
                 allGears[i].GetComponent<RotationMouse>().enabled = true;
             }
-
-
         }
     }
 }

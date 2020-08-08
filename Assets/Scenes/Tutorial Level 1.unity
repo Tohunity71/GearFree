@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 283650021}
   m_Layer: 0
   m_Name: GrootPlatform1
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3145,6 +3145,7 @@ GameObject:
   - component: {fileID: 1119046362}
   - component: {fileID: 1119046361}
   - component: {fileID: 1119046363}
+  - component: {fileID: 1119046366}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -3196,7 +3197,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119046360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3287,7 +3288,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 12c7a29e0bd30e14b8df0f444796292e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3313,6 +3314,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1119046366
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119046360}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02, y: -0.11}
+  m_Size: {x: 3.46, y: 2.96}
+  m_Direction: 1
 --- !u!1 &1119939033
 GameObject:
   m_ObjectHideFlags: 0
@@ -5921,6 +5938,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2991082222192162678, guid: 3f45926a34a756943b02fce478db6351,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991082223083554653, guid: 3f45926a34a756943b02fce478db6351,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2991082223996947781, guid: 3f45926a34a756943b02fce478db6351,
         type: 3}
       propertyPath: m_Name

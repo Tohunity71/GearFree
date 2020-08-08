@@ -57,10 +57,8 @@ public class PlayerMovement : MonoBehaviour
         {
             jumps = 0;
             isGrounded = true;
-
         }
     }
-
 
     private void OnCollisionExit2D(Collision2D collision)
     {

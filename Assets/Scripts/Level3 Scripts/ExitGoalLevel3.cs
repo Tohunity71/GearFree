@@ -7,6 +7,7 @@ public class ExitGoalLevel3 : MonoBehaviour
     public GameObject closedPortal;
     public GameObject EndScreen;
     public GameObject Player;
+    public static bool endScreenIsOn = false; 
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -29,10 +30,12 @@ public class ExitGoalLevel3 : MonoBehaviour
     {
         Time.timeScale = 0f;
         EndScreen.gameObject.SetActive(true);
+        endScreenIsOn = true; 
         
     }
     public void BackToMainMenu()
     {
+        endScreenIsOn = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
     }

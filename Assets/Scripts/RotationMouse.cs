@@ -46,11 +46,11 @@ public class RotationMouse : MonoBehaviour
         }
 
         //Deze had ik zelf toegevoegd om te kijken wat het deed
-        Debug.Log("dgrees" + Mathf.DeltaAngle(1000, 90));
-        Debug.Log("abs " + Mathf.Abs(10));
-        Debug.Log("sign" + Mathf.Sign(-20));
-        Debug.Log("sign" + Mathf.Sign(33));
-        Debug.Log("rotate is" + isRotatingObject + gameObject.name);
+        //Debug.Log("dgrees" + Mathf.DeltaAngle(1000, 90));
+        //Debug.Log("abs " + Mathf.Abs(10));
+        //Debug.Log("sign" + Mathf.Sign(-20));
+        //Debug.Log("sign" + Mathf.Sign(33));
+        //Debug.Log("rotate is" + isRotatingObject + gameObject.name);
 
     }
 
